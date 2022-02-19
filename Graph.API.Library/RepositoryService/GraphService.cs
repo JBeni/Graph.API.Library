@@ -38,8 +38,6 @@ namespace Graph.API.Library.RepositoryService
                 .AddJsonFile("appsettings.json", optional: false);
             IConfigurationRoot Configuration = builder.Build();
 
-
-
             var clientId = Configuration["GraphAPISettings:ClientId"];
             var clientSecret = Configuration["GraphAPISettings:ClientSecret"];
             var tenantId = Configuration["GraphAPISettings:TenantId"];
